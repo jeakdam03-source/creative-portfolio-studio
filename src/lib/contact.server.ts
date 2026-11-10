@@ -62,7 +62,7 @@ export function buildInquiryEmail(data: Inquiry) {
 <p style="white-space:pre-wrap;line-height:1.6;margin:0">${escape(data.description)}</p>
 </div>`;
   return {
-    subject: `New inquiry: ${data.service} — ${data.businessName}`,
+    subject: `New inquiry: ${data.service} | ${data.businessName}`,
     text,
     html,
   };

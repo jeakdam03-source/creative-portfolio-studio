@@ -42,7 +42,7 @@ export function ProblemsSection() {
             intro={
               <>
                 <p>
-                  An attractive online presence is important — but it's only half the picture. Behind every good website
+                  An attractive online presence is important, but it's only half the picture. Behind every good website
                   there should be systems that capture leads, follow up on time and keep customer information organised.
                 </p>
                 <p className="mt-4">
@@ -104,7 +104,7 @@ export function ProcessSection() {
           align="center"
           eyebrow="Working process"
           title="How I Bring Your Ideas to Life"
-          intro="A clear, collaborative process — so you always know what's happening and what comes next."
+          intro="A clear, collaborative process, so you always know what's happening and what comes next."
         />
         <div className="relative mt-16">
           <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-sky to-transparent lg:block" aria-hidden="true" />
@@ -165,7 +165,7 @@ export function TestimonialsSection() {
               {t.author && <span className="block font-semibold text-deep">{t.author}</span>}
               {t.role && <span className="block text-slate/60">{t.role}</span>}
               <span className="font-medium text-deep">{t.service}</span>
-              {t.sample && <span className="text-slate/60"> — Sample Review</span>}
+              {t.sample && <span className="text-slate/60">, Sample Review</span>}
             </figcaption>
           </motion.figure>
         ))}
@@ -178,7 +178,7 @@ export function TestimonialsSection() {
 
 export function CtaBand({
   title = "Ready to build something that works for your business?",
-  text = "Tell me about your website, funnel, CRM or automation project — I'll reply personally.",
+  text = "Tell me about your website, funnel, CRM or automation project, I'll reply personally.",
 }: {
   title?: string;
   text?: string;

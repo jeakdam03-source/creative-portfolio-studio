@@ -12,7 +12,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/services")({
   head: () =>
     seo({
-      title: "Services — Website Design, Sales Funnels, CRM & Automation",
+      title: "Services | Website Design, Sales Funnels, CRM & Automation",
       description:
         "Website design and development, sales funnels and landing pages, CRM setup, workflow and marketing automation, AI automation and CRM integrations for growing businesses.",
       path: "/services",
@@ -26,7 +26,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Digital solutions that look good and work hard"
-        intro="I help businesses build a strong online presence and the systems behind it — so leads are captured, followed up and looked after. Every solution is tailored to the tools and needs of your business."
+        intro="I help businesses build a strong online presence and the systems behind it, so leads are captured, followed up and looked after. Every solution is tailored to the tools and needs of your business."
       >
         <nav aria-label="Services on this page" className="mt-10 flex flex-wrap gap-2">
           {services.map((s) => (
@@ -102,7 +102,7 @@ function ServicesPage() {
 
       <ProcessSection />
       <div className="pt-24 lg:pt-32">
-        <CtaBand title="Not sure which service you need?" text="Tell me about your business and goals — I'll help you work out the right starting point." />
+        <CtaBand title="Not sure which service you need?" text="Tell me about your business and goals, I'll help you work out the right starting point." />
       </div>
     </>
   );

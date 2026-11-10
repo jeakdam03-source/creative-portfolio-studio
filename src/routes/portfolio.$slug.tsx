@@ -23,7 +23,7 @@ export const Route = createFileRoute("/portfolio/$slug")({
       return seo({ title: "Project unavailable", description: "This project could not be found.", path: `/portfolio/${params.slug}`, noindex: true });
     }
     return seo({
-      title: `${project.title} — ${project.category} Case Study`,
+      title: `${project.title} | ${project.category} Case Study`,
       description: project.summary,
       path: `/portfolio/${project.slug}`,
       type: "article",

@@ -22,7 +22,7 @@ export const services: Service[] = [
     description:
       "Modern, responsive websites designed to communicate your brand's value, create a strong first impression, and make it easier for potential customers to take action.",
     detail: [
-      "Your website is often the first conversation a customer has with your business. I design sites that explain what you do clearly, look professional on every screen size, and guide visitors toward a next step — a call, a booking, or an inquiry.",
+      "Your website is often the first conversation a customer has with your business. I design sites that explain what you do clearly, look professional on every screen size, and guide visitors toward a next step, a call, a booking, or an inquiry.",
       "Every project starts with understanding your audience and your goals, so the structure, wording and layout support how your business actually wins customers.",
     ],
     deliverables: [
@@ -85,7 +85,7 @@ export const services: Service[] = [
     description:
       "Smart automation systems that reduce repetitive tasks, organize communication, and keep leads and customers moving through the right processes.",
     detail: [
-      "Automation handles the repetitive steps — sending a welcome message, reminding a customer about an appointment, alerting your team when someone replies — so nothing depends on someone remembering to do it.",
+      "Automation handles the repetitive steps, sending a welcome message, reminding a customer about an appointment, alerting your team when someone replies, so nothing depends on someone remembering to do it.",
       "I map each workflow before building it, with clear triggers, timing and conditions, then test it thoroughly before it goes live.",
     ],
     deliverables: [
@@ -107,7 +107,7 @@ export const services: Service[] = [
     description:
       "AI-powered communication and workflow solutions designed to support customer interactions, lead qualification, and repetitive business tasks.",
     detail: [
-      "AI assistants can answer common questions, collect contact details and help book appointments — with clear rules about what they should and should not say, and a hand-over to a real person when needed.",
+      "AI assistants can answer common questions, collect contact details and help book appointments, with clear rules about what they should and should not say, and a hand-over to a real person when needed.",
       "I design these conversations carefully so they stay helpful, on-brand and appropriate for your business.",
     ],
     deliverables: [
@@ -127,7 +127,7 @@ export const services: Service[] = [
     description:
       "Connected business systems that make it easier for tools, teams, and customer information to work together.",
     detail: [
-      "When your tools don't talk to each other, information gets copied by hand or lost. I connect systems so data moves where it is needed — calendars, forms, databases, messaging and your CRM.",
+      "When your tools don't talk to each other, information gets copied by hand or lost. I connect systems so data moves where it is needed, calendars, forms, databases, messaging and your CRM.",
       "I also troubleshoot existing automations and review processes to find steps that can be simplified.",
     ],
     deliverables: [

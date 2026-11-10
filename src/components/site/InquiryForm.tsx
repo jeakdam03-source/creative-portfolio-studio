@@ -124,7 +124,7 @@ export function InquiryForm() {
         <span className="grid size-16 place-items-center rounded-full bg-ice text-deep">
           <CheckCircle2 className="size-8" />
         </span>
-        <h3 className="mt-6 font-display text-2xl font-semibold">Thank you — your inquiry was sent</h3>
+        <h3 className="mt-6 font-display text-2xl font-semibold">Thank you, your inquiry was sent</h3>
         <p className="mt-3 max-w-md text-slate/75">
           I've received your message and will reply by email or WhatsApp soon. For anything urgent, feel free to message me on WhatsApp.
         </p>

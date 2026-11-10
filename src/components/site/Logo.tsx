@@ -25,7 +25,7 @@ export function Logo({ className, tone = "default" }: { className?: string; tone
     <Link
       to="/"
       className={cn("group inline-flex items-center gap-2.5", className)}
-      aria-label={`${site.name} — home`}
+      aria-label={`${site.name} | home`}
     >
       <span
         className={cn(

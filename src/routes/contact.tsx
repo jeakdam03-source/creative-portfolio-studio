@@ -13,7 +13,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     seo({
-      title: "Contact — Start Your Website, Funnel or Automation Project",
+      title: "Contact | Start Your Website, Funnel or Automation Project",
       description:
         "Have a website, CRM, funnel, or automation project in mind? Message Ajayi Oluwayemisi on WhatsApp, send an email, or submit a project inquiry.",
       path: "/contact",

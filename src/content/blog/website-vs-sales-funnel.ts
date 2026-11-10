@@ -4,7 +4,7 @@ export const websiteVsSalesFunnel: Article = {
   slug: "website-vs-sales-funnel-what-does-your-business-need",
   title: "Website vs. Sales Funnel: What Does Your Business Actually Need?",
   excerpt:
-    "Websites and sales funnels do different jobs. Understanding the difference helps you invest in the right one — or use both together.",
+    "Websites and sales funnels do different jobs. Understanding the difference helps you invest in the right one, or use both together.",
   category: "Sales Funnels",
   date: "2026-11-10",
   author: "Ajayi Oluwayemisi",
@@ -17,7 +17,7 @@ export const websiteVsSalesFunnel: Article = {
   body: [
     {
       type: "p",
-      text: "\"Do I need a website or a sales funnel?\" is one of the most common questions I hear from business owners. The terms are often used as if they mean the same thing, but they're built for different jobs. Choosing the right one — or knowing when to use both — can save time, money and a lot of frustration.",
+      text: "\"Do I need a website or a sales funnel?\" is one of the most common questions I hear from business owners. The terms are often used as if they mean the same thing, but they're built for different jobs. Choosing the right one, or knowing when to use both, can save time, money and a lot of frustration.",
     },
     { type: "h2", id: "what-a-website-does", text: "What a business website does" },
     {
@@ -36,7 +36,7 @@ export const websiteVsSalesFunnel: Article = {
     },
     {
       type: "p",
-      text: "Because it serves many purposes, a website naturally includes navigation, multiple pages and a range of options. That's a strength — but it also means visitors can wander.",
+      text: "Because it serves many purposes, a website naturally includes navigation, multiple pages and a range of options. That's a strength, but it also means visitors can wander.",
     },
     { type: "h2", id: "what-a-funnel-does", text: "What a sales funnel does" },
     {
@@ -47,7 +47,7 @@ export const websiteVsSalesFunnel: Article = {
       type: "ul",
       items: [
         "Speaks to one specific audience about one specific offer.",
-        "Removes distractions — often there's no main navigation at all.",
+        "Removes distractions. Often there's no main navigation at all.",
         "Repeats a single call to action, such as register, book or buy.",
         "Usually connects to follow-up, such as confirmation emails and reminders.",
         "Is often paired with advertising or a campaign that sends traffic directly to it.",
@@ -72,21 +72,21 @@ export const websiteVsSalesFunnel: Article = {
     { type: "h3", text: "When a website is the priority" },
     {
       type: "p",
-      text: "If people regularly look you up before getting in touch — after a referral, seeing your van, or meeting you at an event — a professional website is essential. Local service businesses, consultants, agencies and clinics all rely on a credible website to build trust.",
+      text: "If people regularly look you up before getting in touch, after a referral, seeing your van, or meeting you at an event, a professional website is essential. Local service businesses, consultants, agencies and clinics all rely on a credible website to build trust.",
     },
     { type: "h3", text: "When a funnel is the priority" },
     {
       type: "p",
-      text: "If you're promoting a specific offer — a webinar, a free consultation, a limited-time package or a downloadable guide — a funnel usually performs that job better than a general page, because it keeps attention on one decision.",
+      text: "If you're promoting a specific offer, a webinar, a free consultation, a limited-time package or a downloadable guide, a funnel usually performs that job better than a general page, because it keeps attention on one decision.",
     },
     {
       type: "callout",
-      text: "**A hypothetical example:** a business coach runs ads for a free online workshop. Sending that traffic to the homepage gives visitors a dozen options. Sending it to a dedicated registration page — with the date, what attendees will learn and one Reserve Your Seat button — keeps the message focused.",
+      text: "**A hypothetical example:** a business coach runs ads for a free online workshop. Sending that traffic to the homepage gives visitors a dozen options. Sending it to a dedicated registration page, with the date, what attendees will learn and one Reserve Your Seat button, keeps the message focused.",
     },
     { type: "h2", id: "working-together", text: "When they work best together" },
     {
       type: "p",
-      text: "For many businesses, the answer isn't one or the other. The website builds long-term trust and visibility, while funnels handle specific campaigns. They can — and should — be connected.",
+      text: "For many businesses, the answer isn't one or the other. The website builds long-term trust and visibility, while funnels handle specific campaigns. They can, and should, be connected.",
     },
     {
       type: "ul",
@@ -133,7 +133,7 @@ export const websiteVsSalesFunnel: Article = {
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {
       type: "p",
-      text: "A website tells the full story of your business. A sales funnel tells one story very well, with one clear ending. Most growing businesses benefit from a strong website as the foundation, with focused funnels for specific offers — both connected to a system that follows up reliably.",
+      text: "A website tells the full story of your business. A sales funnel tells one story very well, with one clear ending. Most growing businesses benefit from a strong website as the foundation, with focused funnels for specific offers, both connected to a system that follows up reliably.",
     },
     {
       type: "p",

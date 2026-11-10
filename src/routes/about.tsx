@@ -14,7 +14,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/about")({
   head: () =>
     seo({
-      title: "About Ajayi Oluwayemisi — Website Designer & CRM Specialist",
+      title: "About Ajayi Oluwayemisi | Website Designer & CRM Specialist",
       description:
         "Meet Ajayi Oluwayemisi, a website designer and CRM & automation specialist who turns complicated processes into clear, useful digital solutions.",
       path: "/about",

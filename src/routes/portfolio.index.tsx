@@ -12,7 +12,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/portfolio/")({
   head: () =>
     seo({
-      title: "Portfolio — Websites, Sales Funnels, CRM & Automation Projects",
+      title: "Portfolio | Websites, Sales Funnels, CRM & Automation Projects",
       description:
         "Selected website design, sales funnel, CRM automation, AI automation and integration projects by Ajayi Oluwayemisi.",
       path: "/portfolio",
