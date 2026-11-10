@@ -57,7 +57,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "user-experience", text: "User experience: making it easy" },
     {
       type: "p",
-      text: "User experience simply means how easy and pleasant it is to use your website. Good user experience is usually invisible, visitors find what they need without thinking about it. Poor user experience is noticed immediately.",
+      text: "User experience simply means how easy and pleasant it is to use your website. Good user experience is usually invisible: visitors find what they need without thinking about it. Poor user experience is noticed immediately.",
     },
     {
       type: "ul",
@@ -93,7 +93,7 @@ export const moreThanABeautifulWebsite: Article = {
         "A simple inquiry or quote request form.",
         "A booking link for consultations or appointments.",
         "A click-to-chat button for quick questions.",
-        "A helpful resource, a checklist or guide, in exchange for an email address.",
+        "A helpful resource, such as a checklist or guide, in exchange for an email address.",
       ],
     },
     {
@@ -103,7 +103,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "calls-to-action", text: "Calls to action that feel natural" },
     {
       type: "p",
-      text: "A call to action is the button or link that invites a visitor to take the next step. The best ones are specific and appear at natural decision points, after you've explained a service, shown an example of your work, or answered a common question.",
+      text: "A call to action is the button or link that invites a visitor to take the next step. The best ones are specific and appear at natural decision points: after you've explained a service, shown an example of your work, or answered a common question.",
     },
     {
       type: "p",

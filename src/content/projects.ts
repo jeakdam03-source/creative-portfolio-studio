@@ -227,7 +227,7 @@ export const projects: Project[] = [
     ),
     overview: [
       "This page presents a credit and funding partner program as a one-stop shop for business and personal financial needs.",
-      "Each core service, personal credit counseling, business credit consulting and funding services, has its own illustrated block and Get Started call to action, followed by partners and testimonials.",
+      "Each core service (personal credit counseling, business credit consulting and funding services) has its own illustrated block and Get Started call to action, followed by partners and testimonials.",
     ],
     scope: ["Funnel page design", "Lead capture layout"],
     solution: [

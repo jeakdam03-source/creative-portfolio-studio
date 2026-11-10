@@ -85,7 +85,7 @@ export const services: Service[] = [
     description:
       "Smart automation systems that reduce repetitive tasks, organize communication, and keep leads and customers moving through the right processes.",
     detail: [
-      "Automation handles the repetitive steps, sending a welcome message, reminding a customer about an appointment, alerting your team when someone replies, so nothing depends on someone remembering to do it.",
+      "Automation handles the repetitive steps (sending a welcome message, reminding a customer about an appointment, alerting your team when someone replies), so nothing depends on someone remembering to do it.",
       "I map each workflow before building it, with clear triggers, timing and conditions, then test it thoroughly before it goes live.",
     ],
     deliverables: [
@@ -127,7 +127,7 @@ export const services: Service[] = [
     description:
       "Connected business systems that make it easier for tools, teams, and customer information to work together.",
     detail: [
-      "When your tools don't talk to each other, information gets copied by hand or lost. I connect systems so data moves where it is needed, calendars, forms, databases, messaging and your CRM.",
+      "When your tools don't talk to each other, information gets copied by hand or lost. I connect systems so data moves where it is needed: calendars, forms, databases, messaging and your CRM.",
       "I also troubleshoot existing automations and review processes to find steps that can be simplified.",
     ],
     deliverables: [

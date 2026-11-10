@@ -68,7 +68,7 @@ export const crmAutomationStopLosingLeads: Article = {
     },
     {
       type: "p",
-      text: "For example, you might tag every contact with the service they asked about and the place they came from, your website, a funnel, a referral. You might add a custom field for their preferred contact method. Small decisions like these make it possible to send the right message to the right person later.",
+      text: "For example, you might tag every contact with the service they asked about and the place they came from, such as your website, a funnel or a referral. You might add a custom field for their preferred contact method. Small decisions like these make it possible to send the right message to the right person later.",
     },
     { type: "h2", id: "automated-follow-ups", text: "Automated follow-ups that still feel personal" },
     {

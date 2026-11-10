@@ -102,7 +102,7 @@ function ServicesPage() {
 
       <ProcessSection />
       <div className="pt-24 lg:pt-32">
-        <CtaBand title="Not sure which service you need?" text="Tell me about your business and goals, I'll help you work out the right starting point." />
+        <CtaBand title="Not sure which service you need?" text="Tell me about your business and goals. I'll help you work out the right starting point." />
       </div>
     </>
   );

@@ -129,7 +129,7 @@ export function Hero() {
             className="mt-5 flex items-center gap-3 font-medium text-deep"
           >
             <span className="accent-rule" aria-hidden="true" />
-            Hi, I'm Oluwayemisi, Website Designer &amp; CRM Automation Specialist.
+            Hi, I'm Oluwayemisi, a Website Designer &amp; CRM Automation Specialist.
           </motion.p>
 
           <motion.div

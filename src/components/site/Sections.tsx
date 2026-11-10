@@ -178,7 +178,7 @@ export function TestimonialsSection() {
 
 export function CtaBand({
   title = "Ready to build something that works for your business?",
-  text = "Tell me about your website, funnel, CRM or automation project, I'll reply personally.",
+  text = "Tell me about your website, funnel, CRM or automation project. I'll reply personally.",
 }: {
   title?: string;
   text?: string;

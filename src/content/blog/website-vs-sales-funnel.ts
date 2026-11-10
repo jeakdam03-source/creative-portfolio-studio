@@ -72,12 +72,12 @@ export const websiteVsSalesFunnel: Article = {
     { type: "h3", text: "When a website is the priority" },
     {
       type: "p",
-      text: "If people regularly look you up before getting in touch, after a referral, seeing your van, or meeting you at an event, a professional website is essential. Local service businesses, consultants, agencies and clinics all rely on a credible website to build trust.",
+      text: "If people regularly look you up before getting in touch (after a referral, seeing your van or meeting you at an event), a professional website is essential. Local service businesses, consultants, agencies and clinics all rely on a credible website to build trust.",
     },
     { type: "h3", text: "When a funnel is the priority" },
     {
       type: "p",
-      text: "If you're promoting a specific offer, a webinar, a free consultation, a limited-time package or a downloadable guide, a funnel usually performs that job better than a general page, because it keeps attention on one decision.",
+      text: "If you're promoting a specific offer (a webinar, a free consultation, a limited-time package or a downloadable guide), a funnel usually performs that job better than a general page, because it keeps attention on one decision.",
     },
     {
       type: "callout",
