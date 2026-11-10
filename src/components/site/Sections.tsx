@@ -131,7 +131,6 @@ export function ProcessSection() {
 
 export function TestimonialsSection() {
   if (!site.showTestimonials || testimonials.length === 0) return null;
-  const hasSamples = testimonials.some((t) => t.sample);
   return (
     <section className="container-page py-24 lg:py-32" aria-labelledby="testimonials-heading">
       <div className="text-center">
@@ -141,11 +140,6 @@ export function TestimonialsSection() {
           title={<span id="testimonials-heading">Kind Words From Clients</span>}
           intro="Thoughtful work, clear communication, and digital solutions built with care."
         />
-        {hasSamples && (
-          <Reveal className="mx-auto mt-6 inline-flex max-w-xl items-center gap-2 rounded-full border border-star/60 bg-star/10 px-4 py-2 text-xs font-medium text-slate">
-            Design preview: these are sample reviews, not feedback from real clients.
-          </Reveal>
-        )}
       </div>
       <Stagger className="mt-14 grid gap-6 md:grid-cols-3">
         {testimonials.map((t, i) => (
@@ -164,8 +158,12 @@ export function TestimonialsSection() {
             <figcaption className="mt-6 border-t border-border pt-4 text-sm">
               {t.author && <span className="block font-semibold text-deep">{t.author}</span>}
               {t.role && <span className="block text-slate/60">{t.role}</span>}
-              <span className="font-medium text-deep">{t.service}</span>
-              {t.sample && <span className="text-slate/60">, Sample Review</span>}
+              <span className="flex flex-wrap items-center gap-2">
+                <span className="font-medium text-deep">{t.service}</span>
+                {t.sample && (
+                  <span className="rounded-full bg-ice px-2.5 py-0.5 text-xs font-medium text-slate/70">Sample Review</span>
+                )}
+              </span>
             </figcaption>
           </motion.figure>
         ))}
