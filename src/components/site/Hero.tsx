@@ -184,7 +184,7 @@ export function Hero() {
               width={960}
               height={960}
               fetchPriority="high"
-              className="h-full w-full rounded-full object-cover drop-shadow-[0_30px_40px_color-mix(in_oklab,var(--color-deep)_25%,transparent)]"
+              className="h-full w-full rounded-full object-cover drop-shadow-[0_30px_40px_color-mix(in_oklab,var(--c-deep)_25%,transparent)]"
             />
           </motion.div>
 
