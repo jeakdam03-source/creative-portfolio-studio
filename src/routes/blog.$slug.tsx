@@ -115,7 +115,7 @@ function ShareBar({ title }: { title: string }) {
     }
     window.open(targets[kind], "_blank", "noopener,noreferrer");
   };
-  const btn = "inline-flex h-10 items-center gap-2 rounded-full border border-border bg-background px-4 text-sm font-medium text-deep transition-colors hover:border-sky hover:bg-ice-soft";
+  const btn = "inline-flex h-10 items-center gap-2 rounded-full border border-border bg-card px-4 text-sm font-medium text-deep transition-colors hover:border-sky hover:bg-ice-soft";
   return (
     <div className="flex flex-wrap items-center gap-2" aria-label="Share this article">
       <span className="mr-1 text-sm font-semibold text-deep">Share:</span>
@@ -208,7 +208,7 @@ function ArticlePage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <WhatsAppButton variant="sky" message={`Hi Oluwayemisi, I read "${article.title}" and would like to discuss a project.`} />
-              <Link to="/contact" className="inline-flex h-12 items-center rounded-full bg-background px-6 font-semibold text-deep hover:bg-ice">
+              <Link to="/contact" className="inline-flex h-12 items-center rounded-full bg-card px-6 font-semibold text-deep hover:bg-ice">
                 Send an inquiry
               </Link>
             </div>
@@ -230,7 +230,7 @@ function ArticlePage() {
                   key={r.slug}
                   to="/blog/$slug"
                   params={{ slug: r.slug }}
-                  className="group flex flex-col gap-5 overflow-hidden rounded-3xl border border-border bg-background p-4 shadow-soft transition-shadow hover:shadow-lift sm:flex-row sm:items-center"
+                  className="group flex flex-col gap-5 overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-soft transition-shadow hover:shadow-lift sm:flex-row sm:items-center"
                 >
                   <img src={r.image.src} alt="" width={r.image.width} height={r.image.height} loading="lazy" className="aspect-[16/10] w-full rounded-2xl object-cover sm:w-48" />
                   <div className="p-2">

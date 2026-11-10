@@ -19,13 +19,13 @@ export function BrowserFrame({
   label?: string | undefined;
 }) {
   return (
-    <div className={cn("overflow-hidden rounded-2xl border border-border bg-background shadow-frame", className)}>
+    <div className={cn("overflow-hidden rounded-2xl border border-border bg-card shadow-frame", className)}>
       <div className="flex h-7 items-center gap-1.5 border-b border-border bg-ice-soft px-3">
         <span className="size-2 rounded-full bg-deep/15" />
         <span className="size-2 rounded-full bg-deep/15" />
         <span className="size-2 rounded-full bg-deep/15" />
         {label && (
-          <span className="ml-3 truncate rounded-full bg-background px-3 py-0.5 text-[10px] text-slate/60">
+          <span className="ml-3 truncate rounded-full bg-card px-3 py-0.5 text-[10px] text-slate/60">
             {label}
           </span>
         )}

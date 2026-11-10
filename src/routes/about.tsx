@@ -37,8 +37,8 @@ function AboutPage() {
         <div className="pointer-events-none absolute inset-0 bg-grid-soft opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent)]" aria-hidden="true" />
         <div className="container-page relative grid items-center gap-14 pb-20 pt-14 lg:grid-cols-[1fr_1.1fr] lg:pt-20">
           <Reveal className="relative mx-auto w-full max-w-md">
-            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2.5rem] bg-ice" aria-hidden="true" />
-            <div className="relative rounded-[2.5rem] border border-border bg-background p-6 shadow-lift">
+            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2.5rem] bg-sky/35" aria-hidden="true" />
+            <div className="relative rounded-[2.5rem] border border-border bg-card p-6 shadow-lift">
               <img
                 src={PORTRAIT_SRC}
                 alt="Portrait of Ajayi Oluwayemisi"
@@ -95,7 +95,7 @@ function AboutPage() {
             {services.map((s) => {
               const Icon = s.icon;
               return (
-                <motion.div key={s.slug} variants={staggerChild} className="flex items-start gap-4 rounded-3xl border border-border bg-background p-6">
+                <motion.div key={s.slug} variants={staggerChild} className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6">
                   <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-ice text-deep">
                     <Icon className="size-5" strokeWidth={1.7} />
                   </span>

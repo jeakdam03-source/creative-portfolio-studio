@@ -52,7 +52,7 @@ function PortfolioPage() {
                   onClick={() => setFilter(f)}
                   className={cn(
                     "relative shrink-0 rounded-full border px-4 py-2.5 text-sm font-medium transition-colors",
-                    active ? "border-deep text-deep-foreground" : "border-border bg-background text-deep hover:border-sky",
+                    active ? "border-deep text-deep-foreground" : "border-border bg-card text-deep hover:border-sky",
                   )}
                 >
                   {active && (

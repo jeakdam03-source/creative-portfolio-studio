@@ -156,7 +156,7 @@ function BlogPage() {
                 }}
                 className={cn(
                   "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
-                  category === c ? "border-deep bg-deep text-deep-foreground" : "border-border bg-background text-deep hover:border-sky",
+                  category === c ? "border-deep bg-deep text-deep-foreground" : "border-border bg-card text-deep hover:border-sky",
                 )}
               >
                 {c === "All" ? "All articles" : c}
@@ -174,7 +174,7 @@ function BlogPage() {
                 setPage(1);
               }}
               placeholder="Search articles…"
-              className="h-12 w-full rounded-full border border-border bg-background pl-11 pr-4 text-sm outline-none transition-colors placeholder:text-slate/45 focus:border-sky"
+              className="h-12 w-full rounded-full border border-border bg-card pl-11 pr-4 text-sm outline-none transition-colors placeholder:text-slate/45 focus:border-sky"
             />
           </label>
         </div>
@@ -201,7 +201,7 @@ function BlogPage() {
                 setQuery("");
                 setCategory("All");
               }}
-              className="mt-5 rounded-full border border-deep/20 px-5 py-2 text-sm font-medium text-deep hover:bg-background"
+              className="mt-5 rounded-full border border-deep/20 px-5 py-2 text-sm font-medium text-deep hover:bg-card"
             >
               Clear filters
             </button>

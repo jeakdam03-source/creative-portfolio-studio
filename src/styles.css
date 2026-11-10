@@ -92,14 +92,16 @@
   --deep: oklch(0.37 0.1326 259.53); /* #0B3B84 */
   --deep-foreground: oklch(1 0 0);
   --ice: oklch(0.9514 0.025 236.82); /* #E0F2FE */
-  --ice-soft: oklch(0.9771 0.0125 236.62);
+  /* Slightly deeper ice tone for alternating sections on the ice page background */
+  --ice-soft: oklch(0.925 0.036 236.5);
   --slate: oklch(0.2795 0.0368 260.03); /* #1E293B */
   --star: oklch(0.8439 0.1513 87.87);
   --whatsapp: oklch(0.761 0.2015 149.74);
   --whatsapp-foreground: oklch(0.2795 0.0368 260.03);
 
   /* shadcn semantic mapping */
-  --background: oklch(1 0 0);
+  /* Page background: brand Ice Blue #E0F2FE (owner asked for no white page background) */
+  --background: var(--ice);
   --foreground: var(--slate);
   --card: oklch(1 0 0);
   --card-foreground: var(--slate);
@@ -115,7 +117,7 @@
   --accent-foreground: var(--deep);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.92 0.018 240);
+  --border: oklch(0.88 0.03 238);
   --input: oklch(0.9 0.02 240);
   --ring: var(--sky);
 

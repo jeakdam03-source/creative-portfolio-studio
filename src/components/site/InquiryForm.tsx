@@ -40,7 +40,7 @@ const initial: Values = {
 };
 
 const inputCls =
-  "mt-2 block h-12 w-full rounded-xl border border-input bg-background px-4 text-[0.95rem] text-slate outline-none transition-colors placeholder:text-slate/40 focus:border-sky focus:ring-2 focus:ring-sky/30 aria-[invalid=true]:border-destructive";
+  "mt-2 block h-12 w-full rounded-xl border border-input bg-card px-4 text-[0.95rem] text-slate outline-none transition-colors placeholder:text-slate/40 focus:border-sky focus:ring-2 focus:ring-sky/30 aria-[invalid=true]:border-destructive";
 
 function Field({ id, label, required, error, children, hint }: { id: string; label: string; required?: boolean; error?: string | undefined; hint?: string; children: React.ReactNode }) {
   return (
@@ -243,7 +243,7 @@ export function InquiryForm() {
                   <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="inline-flex h-10 items-center gap-2 rounded-full bg-whatsapp px-4 text-sm font-semibold text-whatsapp-foreground">
                     <WhatsAppIcon className="size-4" /> Message on WhatsApp
                   </a>
-                  <a href={mailtoLink(`Project inquiry: ${values.service || "New project"}`, fallbackBody)} className="inline-flex h-10 items-center gap-2 rounded-full border border-deep/20 bg-background px-4 text-sm font-semibold text-deep">
+                  <a href={mailtoLink(`Project inquiry: ${values.service || "New project"}`, fallbackBody)} className="inline-flex h-10 items-center gap-2 rounded-full border border-deep/20 bg-card px-4 text-sm font-semibold text-deep">
                     <Mail className="size-4" /> Email {site.email}
                   </a>
                 </div>
