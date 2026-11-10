@@ -111,6 +111,25 @@ export const websiteVsSalesFunnel: Article = {
         "**What happens after someone shows interest?** Whichever you choose, plan the follow-up as carefully as the page.",
       ],
     },
+    { type: "h2", id: "common-mistakes", text: "Common mistakes to avoid" },
+    {
+      type: "p",
+      text: "Whichever route you take, a few avoidable mistakes can undermine the results:",
+    },
+    {
+      type: "ul",
+      items: [
+        "**Sending campaign traffic to the homepage.** Visitors who clicked an ad for one offer shouldn't have to search for it.",
+        "**Building a funnel with no follow-up.** Many people register or opt in but don't act straight away. Without reminders and follow-up emails, that interest fades.",
+        "**Treating the website as finished.** A website should evolve as your services, prices and audience change.",
+        "**Inconsistent branding.** A funnel that looks nothing like your website can make visitors wonder whether it's really you.",
+        "**Too many calls to action.** On a funnel especially, every extra option competes with the one action that matters.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Avoiding these keeps both your website and your funnels doing the job they were built for.",
+    },
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {
       type: "p",

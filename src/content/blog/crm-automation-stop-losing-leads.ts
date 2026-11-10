@@ -129,6 +129,25 @@ export const crmAutomationStopLosingLeads: Article = {
       type: "p",
       text: "If your tools don't currently talk to each other, [integrations](/services) can connect them so information flows where it's needed.",
     },
+    { type: "h2", id: "getting-started", text: "A simple first workflow to start with" },
+    {
+      type: "p",
+      text: "If you're new to automation, start small. One well-built workflow is more valuable than ten half-finished ones. A good first step for most businesses looks like this:",
+    },
+    {
+      type: "ul",
+      items: [
+        "A new inquiry arrives from your website form.",
+        "The contact is created in your CRM and tagged with the service they asked about.",
+        "They receive an immediate, friendly confirmation with what happens next.",
+        "A team member is notified to reply personally within an agreed time.",
+        "If there's no reply after a couple of days, a polite follow-up is sent automatically.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Once that runs smoothly, you can add appointment reminders, longer nurture sequences or re-engagement campaigns for older leads.",
+    },
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {
       type: "p",
