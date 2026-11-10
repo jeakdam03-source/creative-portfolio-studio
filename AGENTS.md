@@ -28,3 +28,11 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Site content (projects, services, blog, testimonials) lives in typed files under `src/content/` and global settings in `src/config/site.ts`; pages render from them — keeps updates to one place.
+- Media is served from `public/` (not CDN pointers) — the site must stay portable to non-Lovable hosts such as Vercel.
+- Contact form emails go through a `createServerFn` calling the Resend REST API with `RESEND_API_KEY`/`CONTACT_FROM_EMAIL` env vars; it must never report success unless the provider accepted the message.
+- Booking buttons render only via `getBookingUrl()` returning a valid https URL — no dead buttons.
+- `src/test/site-rules.test.ts` guards contact, booking, form, and content-integrity rules; run it after content edits.
