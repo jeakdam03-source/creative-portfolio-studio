@@ -81,7 +81,7 @@ export const websiteVsSalesFunnel: Article = {
     },
     {
       type: "callout",
-      text: "**A hypothetical example:** a business coach runs ads for a free online workshop. Sending that traffic to the homepage gives visitors a dozen options. Sending it to a dedicated registration page, with the date, what attendees will learn and one Reserve Your Seat button, keeps the message focused.",
+      text: "**A hypothetical example:** a business coach runs ads for a free online workshop. Sending that traffic to the homepage gives visitors a dozen options. Sending it to a dedicated registration page (with the date, what attendees will learn and one Reserve Your Seat button) keeps the message focused.",
     },
     { type: "h2", id: "working-together", text: "When they work best together" },
     {
@@ -133,7 +133,7 @@ export const websiteVsSalesFunnel: Article = {
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {
       type: "p",
-      text: "A website tells the full story of your business. A sales funnel tells one story very well, with one clear ending. Most growing businesses benefit from a strong website as the foundation, with focused funnels for specific offers, both connected to a system that follows up reliably.",
+      text: "A website tells the full story of your business. A sales funnel tells one story very well, with one clear ending. Most growing businesses benefit from a strong website as the foundation, with focused funnels for specific offers, all connected to a system that follows up reliably.",
     },
     {
       type: "p",

@@ -22,7 +22,7 @@ export const services: Service[] = [
     description:
       "Modern, responsive websites designed to communicate your brand's value, create a strong first impression, and make it easier for potential customers to take action.",
     detail: [
-      "Your website is often the first conversation a customer has with your business. I design sites that explain what you do clearly, look professional on every screen size, and guide visitors toward a next step, a call, a booking, or an inquiry.",
+      "Your website is often the first conversation a customer has with your business. I design sites that explain what you do clearly, look professional on every screen size, and guide visitors toward a next step such as a call, a booking or an inquiry.",
       "Every project starts with understanding your audience and your goals, so the structure, wording and layout support how your business actually wins customers.",
     ],
     deliverables: [
