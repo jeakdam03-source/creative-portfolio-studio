@@ -33,7 +33,7 @@ bun run build    # production build
 
 ## Environment variables
 
-Copy `.env.example` to `.env` for local work and add the same values in your hosting dashboard.
+Copy `.env.example` to `.env.local` for local work (keep it out of Git) and add the same values in your hosting dashboard.
 
 | Variable             | Where       | Required | Purpose |
 | -------------------- | ----------- | -------- | ------- |
