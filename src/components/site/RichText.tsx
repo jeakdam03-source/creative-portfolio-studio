@@ -1,5 +1,20 @@
-import { Link, type LinkProps } from "@tanstack/react-router";
-import { Fragment, type ReactNode } from "react";
+import { useRouter } from "@tanstack/react-router";
+import { Fragment, type MouseEvent, type ReactNode } from "react";
+
+/** Internal link for content strings: real <a href> for crawlers, client-side navigation on click. */
+function InternalLink({ href, children }: { href: string; children: ReactNode }) {
+  const router = useRouter();
+  const onClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    void router.navigate({ href });
+  };
+  return (
+    <a href={href} onClick={onClick}>
+      {children}
+    </a>
+  );
+}
 
 /**
  * Tiny inline formatter for content strings: supports **bold** and [text](/path or https://url).
@@ -19,9 +34,9 @@ export function RichText({ text }: { text: string }) {
       const label = match[2] ?? "";
       if (href.startsWith("/")) {
         nodes.push(
-          <Link key={key++} to={href as LinkProps["to"]}>
+          <InternalLink key={key++} href={href}>
             {label}
-          </Link>,
+          </InternalLink>,
         );
       } else {
         nodes.push(
