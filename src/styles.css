@@ -196,7 +196,7 @@
 
 @layer base {
   * {
-    border-color: var(--color-border);
+    border-color: var(--border);
   }
 
   html {
@@ -204,8 +204,8 @@
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -216,12 +216,12 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    color: var(--color-deep);
+    color: var(--deep);
     letter-spacing: -0.02em;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-sky-strong);
+    outline: 2px solid var(--sky-strong);
     outline-offset: 3px;
     border-radius: 6px;
   }
@@ -262,7 +262,7 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-deep);
+  color: var(--deep);
 }
 
 @utility text-balance {
@@ -275,13 +275,13 @@
   height: 2px;
   width: 2.5rem;
   border-radius: 999px;
-  background: var(--color-sky);
+  background: var(--sky);
 }
 
 /* Soft dotted grid used behind hero / workflow */
 @utility bg-grid-soft {
   background-image: radial-gradient(
-    color-mix(in oklab, var(--color-deep) 14%, transparent) 1px,
+    color-mix(in oklab, var(--deep) 14%, transparent) 1px,
     transparent 1px
   );
   background-size: 22px 22px;
@@ -302,7 +302,7 @@
 
 /* Article typography */
 @utility prose-article {
-  color: var(--color-slate);
+  color: var(--slate);
   font-size: 1.0625rem;
   line-height: 1.8;
   & h2 {
@@ -331,21 +331,21 @@
     margin-top: 0.4rem;
   }
   & li::marker {
-    color: var(--color-sky-strong);
+    color: var(--sky-strong);
   }
   & a {
-    color: var(--color-deep);
+    color: var(--deep);
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: var(--color-sky);
+    text-decoration-color: var(--sky);
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
   }
   & a:hover {
-    text-decoration-color: var(--color-deep);
+    text-decoration-color: var(--deep);
   }
   & strong {
-    color: var(--color-deep);
+    color: var(--deep);
     font-weight: 600;
   }
 }
