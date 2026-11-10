@@ -65,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="eyebrow inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-2 shadow-soft"
+            className="eyebrow inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 shadow-soft"
           >
             <Sparkles className="size-3.5 text-sky-strong" aria-hidden="true" />
             Website Design • CRM • Automation
