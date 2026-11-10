@@ -29,7 +29,7 @@ export function ProjectCard({ project, className, priority }: { project: Project
           className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-deep/35 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-        <span className="absolute left-4 top-4 rounded-full bg-background/95 px-3 py-1 text-xs font-semibold text-deep shadow-soft">
+        <span className="absolute left-4 top-4 rounded-full bg-card/95 px-3 py-1 text-xs font-semibold text-deep shadow-soft">
           {project.category}
         </span>
         {project.video && (

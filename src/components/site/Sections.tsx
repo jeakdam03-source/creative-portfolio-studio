@@ -111,10 +111,10 @@ export function ProcessSection() {
           <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {processSteps.map((s) => (
               <motion.div key={s.n} variants={staggerChild} className="group relative">
-                <span className="relative z-10 mx-auto grid size-14 place-items-center rounded-full border-2 border-sky bg-background font-display text-lg font-semibold text-deep transition-colors duration-300 group-hover:bg-deep group-hover:text-deep-foreground lg:mx-0">
+                <span className="relative z-10 mx-auto grid size-14 place-items-center rounded-full border-2 border-sky bg-card font-display text-lg font-semibold text-deep transition-colors duration-300 group-hover:bg-deep group-hover:text-deep-foreground lg:mx-0">
                   {s.n}
                 </span>
-                <div className="mt-5 rounded-3xl border border-border bg-background p-6 text-center shadow-soft transition-transform duration-300 group-hover:-translate-y-1 lg:text-left">
+                <div className="mt-5 rounded-3xl border border-border bg-card p-6 text-center shadow-soft transition-transform duration-300 group-hover:-translate-y-1 lg:text-left">
                   <h3 className="font-display text-xl font-semibold">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate/75">{s.text}</p>
                 </div>

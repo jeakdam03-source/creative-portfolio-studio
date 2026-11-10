@@ -30,7 +30,7 @@ export function Logo({ className, tone = "default" }: { className?: string; tone
       <span
         className={cn(
           "grid place-items-center rounded-xl transition-transform duration-300 group-hover:-rotate-3",
-          tone === "onDeep" && "bg-background p-1.5",
+          tone === "onDeep" && "bg-card p-1.5",
         )}
       >
         <LogoMark className={tone === "onDeep" ? "h-8" : undefined} />

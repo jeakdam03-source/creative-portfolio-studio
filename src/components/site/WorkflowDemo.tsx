@@ -88,7 +88,7 @@ export function WorkflowDemo() {
   const stage = stages[active] ?? stages[0];
 
   return (
-    <div ref={ref} className="relative overflow-hidden rounded-[2rem] border border-border bg-background p-5 shadow-lift sm:p-8 lg:p-10">
+    <div ref={ref} className="relative overflow-hidden rounded-[2rem] border border-border bg-card p-5 shadow-lift sm:p-8 lg:p-10">
       <div className="pointer-events-none absolute inset-0 bg-grid-soft opacity-50" aria-hidden="true" />
 
       <div className="relative flex flex-wrap items-center justify-between gap-3">
@@ -100,7 +100,7 @@ export function WorkflowDemo() {
           <button
             type="button"
             onClick={() => (active >= stages.length - 1 && !playing ? replay() : setPlaying((p) => !p))}
-            className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-background px-4 text-sm font-medium text-deep hover:border-sky hover:bg-ice-soft"
+            className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-card px-4 text-sm font-medium text-deep hover:border-sky hover:bg-ice-soft"
           >
             {playing ? <Pause className="size-4" /> : <Play className="size-4" />}
             {playing ? "Pause" : "Play"}
@@ -140,7 +140,7 @@ export function WorkflowDemo() {
                 aria-current={isActive ? "step" : undefined}
                 className={cn(
                   "flex w-full items-center gap-4 rounded-2xl border p-3 text-left transition-all duration-300 lg:flex-col lg:border-transparent lg:p-2 lg:text-center",
-                  isActive ? "border-sky bg-ice-soft lg:bg-transparent" : "border-border bg-background hover:border-sky/60 lg:bg-transparent",
+                  isActive ? "border-sky bg-ice-soft lg:bg-transparent" : "border-border bg-card hover:border-sky/60 lg:bg-transparent",
                 )}
               >
                 <span
@@ -148,7 +148,7 @@ export function WorkflowDemo() {
                     "relative grid size-14 shrink-0 place-items-center rounded-2xl border-2 transition-all duration-500 lg:size-[4.5rem]",
                     isActive && "border-sky bg-deep text-deep-foreground shadow-lift",
                     isDone && "border-sky bg-ice text-deep",
-                    !isActive && !isDone && "border-border bg-background text-slate/50",
+                    !isActive && !isDone && "border-border bg-card text-slate/50",
                   )}
                 >
                   {isActive && !reduce && (
@@ -206,7 +206,7 @@ export function WorkflowDemo() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -16 }}
             transition={{ duration: reduce ? 0 : 0.35, delay: reduce ? 0 : 0.05 }}
-            className="rounded-2xl border border-border bg-background p-4 shadow-soft"
+            className="rounded-2xl border border-border bg-card p-4 shadow-soft"
           >
             <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate/50">Sample preview</p>
             {stage.preview.map(([k, v], i) => (

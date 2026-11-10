@@ -82,10 +82,10 @@ function Lightbox({ images, index, onClose, onIndex }: { images: ProjectImage[];
         </AnimatePresence>
         {images.length > 1 && (
           <>
-            <button type="button" onClick={prev} aria-label="Previous image" className="absolute left-0 grid size-12 place-items-center rounded-full bg-background text-deep shadow-lift hover:bg-ice">
+            <button type="button" onClick={prev} aria-label="Previous image" className="absolute left-0 grid size-12 place-items-center rounded-full bg-card text-deep shadow-lift hover:bg-ice">
               <ChevronLeft className="size-5" />
             </button>
-            <button type="button" onClick={next} aria-label="Next image" className="absolute right-0 grid size-12 place-items-center rounded-full bg-background text-deep shadow-lift hover:bg-ice">
+            <button type="button" onClick={next} aria-label="Next image" className="absolute right-0 grid size-12 place-items-center rounded-full bg-card text-deep shadow-lift hover:bg-ice">
               <ChevronRight className="size-5" />
             </button>
           </>

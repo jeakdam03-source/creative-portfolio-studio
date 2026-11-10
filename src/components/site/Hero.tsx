@@ -65,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
-            className="eyebrow inline-flex items-center gap-2 rounded-full border border-border bg-background/80 px-4 py-2 shadow-soft"
+            className="eyebrow inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-2 shadow-soft"
           >
             <Sparkles className="size-3.5 text-sky-strong" aria-hidden="true" />
             Website Design • CRM • Automation
@@ -202,7 +202,7 @@ export function Hero() {
 
           {/* small UI chips */}
           <FloatCard delay={1.05} float={6} duration={5} className="absolute right-[2%] top-[10%] z-20">
-            <div className="flex items-center gap-2.5 rounded-2xl border border-border bg-background px-3.5 py-2.5 shadow-lift">
+            <div className="flex items-center gap-2.5 rounded-2xl border border-border bg-card px-3.5 py-2.5 shadow-lift">
               <span className="grid size-8 place-items-center rounded-xl bg-ice text-deep">
                 <LayoutTemplate className="size-4" />
               </span>
@@ -210,7 +210,7 @@ export function Hero() {
             </div>
           </FloatCard>
           <FloatCard delay={1.2} float={7} duration={5.5} className="absolute bottom-[2%] left-[2%] z-20 sm:left-[4%]">
-            <div className="flex items-center gap-2.5 rounded-2xl border border-border bg-background px-3.5 py-2.5 shadow-lift">
+            <div className="flex items-center gap-2.5 rounded-2xl border border-border bg-card px-3.5 py-2.5 shadow-lift">
               <span className="grid size-8 place-items-center rounded-xl bg-deep text-deep-foreground">
                 <Workflow className="size-4" />
               </span>
