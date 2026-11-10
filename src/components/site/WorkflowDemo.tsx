@@ -85,7 +85,7 @@ export function WorkflowDemo() {
     setActive(i);
   };
 
-  const stage = stages[active];
+  const stage = stages[active] ?? stages[0];
 
   return (
     <div ref={ref} className="relative overflow-hidden rounded-[2rem] border border-border bg-background p-5 shadow-lift sm:p-8 lg:p-10">

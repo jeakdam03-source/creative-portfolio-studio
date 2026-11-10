@@ -17,7 +17,7 @@ export const site = {
    * Preferred (subject to availability): https://ajayioluwayemisi.vercel.app
    * Can also be set with the VITE_SITE_URL environment variable.
    */
-  url: (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ?? "",
+  url: (import.meta.env["VITE_SITE_URL"] as string | undefined)?.replace(/\/$/, "") ?? "",
 
   email: "yemisioluwa2020@gmail.com",
 
@@ -33,7 +33,7 @@ export const site = {
    * available — every booking button stays hidden while this is empty.
    * Can also be set with the VITE_BOOKING_URL environment variable.
    */
-  bookingUrl: (import.meta.env.VITE_BOOKING_URL as string | undefined) ?? "",
+  bookingUrl: (import.meta.env["VITE_BOOKING_URL"] as string | undefined) ?? "",
 
   /**
    * Social links. Only add real profile URLs. Empty list = no social icons shown.

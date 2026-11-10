@@ -34,7 +34,7 @@ function FloatCard({
       className={className}
     >
       <motion.div
-        animate={reduce ? undefined : { y: [0, -float, 0] }}
+        animate={reduce ? {} : { y: [0, -float, 0] }}
         transition={{ duration, repeat: Infinity, ease: "easeInOut", delay }}
       >
         {children}
@@ -153,7 +153,7 @@ export function Hero() {
           <motion.div
             aria-hidden="true"
             className="absolute inset-[6%] rounded-full border border-dashed border-sky/60"
-            animate={reduce ? undefined : { rotate: 360 }}
+            animate={reduce ? {} : { rotate: 360 }}
             transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
           />
           <div aria-hidden="true" className="absolute inset-[14%] rounded-full bg-ice" />
@@ -223,7 +223,7 @@ export function Hero() {
             aria-hidden="true"
             viewBox="0 0 24 24"
             className="absolute right-[16%] top-[2%] z-20 size-7 text-sky"
-            animate={reduce ? undefined : { rotate: [0, 15, 0], scale: [1, 1.15, 1] }}
+            animate={reduce ? {} : { rotate: [0, 15, 0], scale: [1, 1.15, 1] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <path fill="currentColor" d="M12 0 L14.2 9.8 L24 12 L14.2 14.2 L12 24 L9.8 14.2 L0 12 L9.8 9.8 Z" />

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const LOGO_SRC = "/images/brand/ajayi-oluwayemisi-logo.png";
 
 /** Approved A monogram (from the brand guide). Never recolour, stretch or redraw. */
-export function LogoMark({ className }: { className?: string }) {
+export function LogoMark({ className }: { className?: string | undefined }) {
   return (
     <img
       src={LOGO_SRC}

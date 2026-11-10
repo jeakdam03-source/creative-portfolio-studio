@@ -12,11 +12,11 @@ export function BrowserFrame({
 }: {
   src: string;
   alt: string;
-  className?: string;
-  width?: number;
-  height?: number;
-  priority?: boolean;
-  label?: string;
+  className?: string | undefined;
+  width?: number | undefined;
+  height?: number | undefined;
+  priority?: boolean | undefined;
+  label?: string | undefined;
 }) {
   return (
     <div className={cn("overflow-hidden rounded-2xl border border-border bg-background shadow-frame", className)}>
@@ -43,7 +43,7 @@ export function BrowserFrame({
   );
 }
 
-export function PhoneFrame({ src, alt, className }: { src: string; alt: string; className?: string }) {
+export function PhoneFrame({ src, alt, className }: { src: string; alt: string; className?: string | undefined }) {
   return (
     <div
       className={cn(
@@ -58,7 +58,7 @@ export function PhoneFrame({ src, alt, className }: { src: string; alt: string; 
 }
 
 /** Renders a project image in the frame that suits it. */
-export function ProjectMedia({ image, className, priority }: { image: ProjectImage; className?: string; priority?: boolean }) {
+export function ProjectMedia({ image, className, priority }: { image: ProjectImage; className?: string | undefined; priority?: boolean | undefined }) {
   if (image.kind === "mobile") return <PhoneFrame src={image.src} alt={image.alt} className={className} />;
   if (image.kind === "desktop")
     return (

@@ -15,7 +15,7 @@ export function WhatsAppFloat() {
       initial={reduce ? false : { opacity: 0, scale: 0.6, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 1, type: "spring", stiffness: 260, damping: 20 }}
-      whileHover={reduce ? undefined : { scale: 1.06 }}
+      whileHover={reduce ? {} : { scale: 1.06 }}
       className="group fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex size-14 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-lift ring-4 ring-background sm:bottom-6 sm:right-6"
     >
       <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-whatsapp/40 [animation-duration:2.8s]" />

@@ -49,6 +49,7 @@ function Lightbox({ images, index, onClose, onIndex }: { images: ProjectImage[];
     };
   }, [onClose, prev, next]);
   const img = images[index];
+  if (!img) return null;
   return (
     <motion.div
       role="dialog"
@@ -100,7 +101,7 @@ function CaseStudyPage() {
   const [lightbox, setLightbox] = useState<number | null>(null);
   const allImages = [project.cover, ...project.gallery];
   const idx = projects.findIndex((p) => p.slug === project.slug);
-  const nextProject = projects[(idx + 1) % projects.length];
+  const nextProject = projects[(idx + 1) % projects.length] ?? projects[0]!;
   const related = projects.filter((p) => p.slug !== project.slug && p.category === project.category).slice(0, 2);
 
   return (

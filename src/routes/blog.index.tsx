@@ -95,7 +95,7 @@ function BlogPage() {
     });
   }, [query, category]);
 
-  const list = filtering ? results : results.filter((a) => a.slug !== featured.slug);
+  const list = filtering || !featured ? results : results.filter((a) => a.slug !== featured.slug);
   const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
   const current = Math.min(page, pages);
   const visible = list.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);

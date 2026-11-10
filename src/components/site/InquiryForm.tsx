@@ -42,7 +42,7 @@ const initial: Values = {
 const inputCls =
   "mt-2 block h-12 w-full rounded-xl border border-input bg-background px-4 text-[0.95rem] text-slate outline-none transition-colors placeholder:text-slate/40 focus:border-sky focus:ring-2 focus:ring-sky/30 aria-[invalid=true]:border-destructive";
 
-function Field({ id, label, required, error, children, hint }: { id: string; label: string; required?: boolean; error?: string; hint?: string; children: React.ReactNode }) {
+function Field({ id, label, required, error, children, hint }: { id: string; label: string; required?: boolean; error?: string | undefined; hint?: string; children: React.ReactNode }) {
   return (
     <div>
       <label htmlFor={id} className="text-sm font-medium text-deep">

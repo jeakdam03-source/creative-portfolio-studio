@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, type LinkProps } from "@tanstack/react-router";
 import { Fragment, type ReactNode } from "react";
 
 /**
@@ -15,17 +15,18 @@ export function RichText({ text }: { text: string }) {
     if (match[1]) {
       nodes.push(<strong key={key++}>{match[1]}</strong>);
     } else {
-      const href = match[3];
+      const href = match[3] ?? "";
+      const label = match[2] ?? "";
       if (href.startsWith("/")) {
         nodes.push(
-          <Link key={key++} to={href}>
-            {match[2]}
+          <Link key={key++} to={href as LinkProps["to"]}>
+            {label}
           </Link>,
         );
       } else {
         nodes.push(
           <a key={key++} href={href} target="_blank" rel="noopener noreferrer">
-            {match[2]}
+            {label}
           </a>,
         );
       }

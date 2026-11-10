@@ -22,7 +22,7 @@ export type Category = (typeof categories)[number];
 export type ProjectImage = {
   src: string;
   alt: string;
-  caption?: string;
+  caption?: string | undefined;
   /** "desktop" renders in a browser frame, "mobile" in a phone frame, "app" as a plain screenshot. */
   kind?: "desktop" | "mobile" | "app";
   width: number;
