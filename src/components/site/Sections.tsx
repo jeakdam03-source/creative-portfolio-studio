@@ -183,14 +183,14 @@ export function CtaBand({
 }) {
   return (
     <section className="container-page pb-24 lg:pb-32">
-      <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-deep px-6 py-14 text-center sm:px-12 lg:py-20">
+      <Reveal className="relative overflow-hidden surface-night rounded-[2.25rem] px-6 py-14 text-center sm:px-12 lg:py-20">
         <svg aria-hidden="true" viewBox="0 0 800 300" className="pointer-events-none absolute inset-0 h-full w-full opacity-30" preserveAspectRatio="none">
           <path d="M0 220 C 200 140 380 300 800 160" stroke="var(--color-sky)" strokeWidth="2" fill="none" />
           <path d="M0 260 C 260 180 420 320 800 210" stroke="var(--color-sky)" strokeWidth="1" fill="none" />
         </svg>
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="text-balance font-display text-3xl font-semibold text-deep-foreground sm:text-4xl">{title}</h2>
-          <p className="mt-4 text-deep-foreground/80">{text}</p>
+          <h2 className="text-balance font-display text-3xl font-semibold text-foreground sm:text-4xl">{title}</h2>
+          <p className="mt-4 text-foreground/80">{text}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <WhatsAppButton variant="sky" />
             <Button asChild variant="onDeep" size="xl">

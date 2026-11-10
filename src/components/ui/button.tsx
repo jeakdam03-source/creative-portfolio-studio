@@ -19,13 +19,13 @@ const buttonVariants = cva(
         // Brand variants
         brand:
           "rounded-full bg-deep text-deep-foreground shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-deep/95 transition-all duration-300",
-        sky: "rounded-full bg-sky text-deep font-semibold shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-sky-strong transition-all duration-300",
+        sky: "rounded-full bg-sky text-navy font-semibold shadow-soft hover:-translate-y-0.5 hover:shadow-lift hover:bg-sky-strong transition-all duration-300",
         whatsapp:
           "rounded-full bg-whatsapp text-whatsapp-foreground font-semibold shadow-soft hover:-translate-y-0.5 hover:shadow-lift transition-all duration-300",
         ghostline:
           "rounded-full border border-deep/20 bg-background text-deep hover:border-sky hover:bg-ice-soft hover:-translate-y-0.5 transition-all duration-300",
         onDeep:
-          "rounded-full bg-background text-deep font-semibold hover:bg-ice hover:-translate-y-0.5 transition-all duration-300",
+          "rounded-full bg-card text-deep font-semibold hover:bg-ice hover:-translate-y-0.5 transition-all duration-300",
       },
       size: {
         default: "h-9 px-4 py-2",

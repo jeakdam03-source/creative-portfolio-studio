@@ -55,15 +55,15 @@ function Lightbox({ images, index, onClose, onIndex }: { images: ProjectImage[];
       role="dialog"
       aria-modal="true"
       aria-label={img.caption ?? img.alt}
-      className="fixed inset-0 z-[60] flex flex-col bg-deep/95 p-4 backdrop-blur-sm sm:p-8"
+      className="fixed inset-0 z-[60] flex flex-col bg-night/95 p-4 backdrop-blur-sm sm:p-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
     >
-      <div className="flex items-center justify-between text-deep-foreground">
-        <p className="text-sm">{img.caption ?? img.alt} <span className="text-deep-foreground/60">· {index + 1} / {images.length}</span></p>
-        <button type="button" onClick={onClose} aria-label="Close gallery" className="grid size-11 place-items-center rounded-full bg-deep-foreground/10 hover:bg-deep-foreground/20" autoFocus>
+      <div className="flex items-center justify-between text-foreground">
+        <p className="text-sm">{img.caption ?? img.alt} <span className="text-foreground/60">· {index + 1} / {images.length}</span></p>
+        <button type="button" onClick={onClose} aria-label="Close gallery" className="grid size-11 place-items-center rounded-full bg-foreground/10 hover:bg-foreground/20" autoFocus>
           <X className="size-5" />
         </button>
       </div>
@@ -280,9 +280,9 @@ function CaseStudyPage() {
               </div>
             </dl>
           </div>
-          <div className="rounded-3xl bg-deep p-6 text-deep-foreground">
-            <h2 className="font-display text-lg font-semibold text-deep-foreground">Want something similar?</h2>
-            <p className="mt-2 text-sm text-deep-foreground/80">Tell me about your project and I'll reply personally.</p>
+          <div className="surface-night rounded-3xl p-6">
+            <h2 className="font-display text-lg font-semibold text-foreground">Want something similar?</h2>
+            <p className="mt-2 text-sm text-foreground/80">Tell me about your project and I'll reply personally.</p>
             <WhatsAppButton variant="sky" size="default" className="mt-5 h-11 w-full px-5" label="Let's Talk" message={`Hi Oluwayemisi, I saw your "${project.title}" project and would like to discuss something similar.`} />
           </div>
         </aside>

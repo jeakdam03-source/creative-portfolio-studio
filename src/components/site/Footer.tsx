@@ -10,7 +10,7 @@ import { Logo } from "./Logo";
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative overflow-hidden bg-deep text-deep-foreground">
+    <footer className="surface-night relative overflow-hidden">
       <svg
         aria-hidden="true"
         viewBox="0 0 1440 120"
@@ -23,11 +23,11 @@ export function Footer() {
         <div className="md:col-span-5">
           <Logo tone="onDeep" />
           <p className="mt-2 text-sm font-medium text-sky">{site.title}</p>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-deep-foreground/75">{site.description}</p>
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-foreground/75">{site.description}</p>
           <div className="mt-6 flex flex-col gap-3 text-sm">
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex items-center gap-2.5 text-deep-foreground/90 hover:text-sky"
+              className="inline-flex items-center gap-2.5 text-foreground/90 hover:text-sky"
             >
               <Mail className="size-4" /> {site.email}
             </a>
@@ -35,7 +35,7 @@ export function Footer() {
               href={whatsappLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-deep-foreground/90 hover:text-sky"
+              className="inline-flex items-center gap-2.5 text-foreground/90 hover:text-sky"
             >
               <WhatsAppIcon className="size-4" /> {site.whatsapp.display}
             </a>
@@ -48,7 +48,7 @@ export function Footer() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full border border-deep-foreground/20 px-3 py-1.5 text-xs hover:border-sky hover:text-sky"
+                    className="rounded-full border border-foreground/20 px-3 py-1.5 text-xs hover:border-sky hover:text-sky"
                   >
                     {s.label}
                   </a>
@@ -59,17 +59,17 @@ export function Footer() {
         </div>
 
         <nav aria-label="Footer" className="md:col-span-3">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-deep-foreground">Explore</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-foreground">Explore</h2>
           <ul className="mt-4 space-y-2.5 text-sm">
             {navLinks.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-deep-foreground/75 hover:text-sky">
+                <Link to={l.to} className="text-foreground/75 hover:text-sky">
                   {l.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link to="/privacy" className="text-deep-foreground/75 hover:text-sky">
+              <Link to="/privacy" className="text-foreground/75 hover:text-sky">
                 Privacy Policy
               </Link>
             </li>
@@ -77,25 +77,25 @@ export function Footer() {
         </nav>
 
         <div className="md:col-span-4">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-deep-foreground">Services</h2>
+          <h2 className="text-sm font-semibold uppercase tracking-[0.16em] text-foreground">Services</h2>
           <ul className="mt-4 space-y-2.5 text-sm">
             {services.map((s) => (
               <li key={s.slug}>
-                <Link to="/services" hash={s.slug} className="text-deep-foreground/75 hover:text-sky">
+                <Link to="/services" hash={s.slug} className="text-foreground/75 hover:text-sky">
                   {s.title}
                 </Link>
               </li>
             ))}
             <li>
-              <Link to="/blog" className="text-deep-foreground/75 hover:text-sky">
+              <Link to="/blog" className="text-foreground/75 hover:text-sky">
                 Insights & Ideas (Blog)
               </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-deep-foreground/10">
-        <div className="container-page flex flex-col gap-2 py-6 text-xs text-deep-foreground/60 sm:flex-row sm:items-center sm:justify-between">
+      <div className="border-t border-foreground/10">
+        <div className="container-page flex flex-col gap-2 py-6 text-xs text-foreground/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {site.name}. All rights reserved.
           </p>

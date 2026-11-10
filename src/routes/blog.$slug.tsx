@@ -201,9 +201,9 @@ function ArticlePage() {
             <ShareBar title={article.title} />
           </div>
 
-          <div className="mt-10 rounded-3xl bg-deep p-7 text-deep-foreground sm:p-9">
-            <h2 className="font-display text-2xl font-semibold text-deep-foreground">Want help putting this into practice?</h2>
-            <p className="mt-3 text-deep-foreground/80">
+          <div className="surface-night mt-10 rounded-3xl p-7 sm:p-9">
+            <h2 className="font-display text-2xl font-semibold text-foreground">Want help putting this into practice?</h2>
+            <p className="mt-3 text-foreground/80">
               I help businesses with websites, sales funnels, CRM systems and automation. Tell me what you're working on.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
