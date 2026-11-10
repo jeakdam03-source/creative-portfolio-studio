@@ -52,6 +52,7 @@
   /* Brand tokens */
   --color-sky: var(--sky);
   --color-sky-strong: var(--sky-strong);
+  --color-sky-ink: var(--sky-ink);
   --color-deep: var(--deep);
   --color-deep-foreground: var(--deep-foreground);
   --color-ice: var(--ice);
@@ -86,6 +87,8 @@
   /* Brand */
   --sky: oklch(0.7535 0.139 232.66); /* #38BDF8 */
   --sky-strong: oklch(0.6847 0.1479 237.32);
+  /* Darker sky tone for accent words on white (meets contrast for large text) */
+  --sky-ink: oklch(0.55 0.15 242);
   --deep: oklch(0.37 0.1326 259.53); /* #0B3B84 */
   --deep-foreground: oklch(1 0 0);
   --ice: oklch(0.9514 0.025 236.82); /* #E0F2FE */

@@ -78,7 +78,7 @@ export function Hero() {
                 <span key={i} className="inline-block overflow-hidden pb-1 align-bottom">
                   <motion.span
                     className={
-                      "inline-block " + (word === "More" || word === "Than" ? "relative text-sky-strong" : "")
+                      "inline-block " + (word === "More" || word === "Than" ? "relative text-sky-ink" : "")
                     }
                     initial={reduce ? { opacity: 0 } : { y: "110%" }}
                     animate={reduce ? { opacity: 1 } : { y: 0 }}

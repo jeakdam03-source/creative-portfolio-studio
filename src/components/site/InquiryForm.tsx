@@ -154,7 +154,7 @@ export function InquiryForm() {
         </Field>
         <div className="sm:col-span-2">
           <Field id="f-service" label="Service Needed" required error={errors.service}>
-            <select id="f-service" className={cn(inputCls, "appearance-none bg-[length:16px] bg-[right_1rem_center] bg-no-repeat pr-10")} value={values.service} onChange={(e) => set("service", e.target.value)} {...err("service")}>
+            <select id="f-service" className={inputCls} value={values.service} onChange={(e) => set("service", e.target.value)} {...err("service")}>
               <option value="">Choose a service…</option>
               {serviceOptions.map((o) => (
                 <option key={o} value={o}>{o}</option>

@@ -143,8 +143,8 @@ function BlogPage() {
         )}
 
         {/* Controls */}
-        <div className="mt-14 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1" role="group" aria-label="Filter articles by category">
+        <div className="mt-14 flex flex-col-reverse gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 lg:flex-wrap lg:overflow-visible" role="group" aria-label="Filter articles by category">
             {(["All", ...blogCategories] as const).map((c) => (
               <button
                 key={c}
@@ -163,7 +163,7 @@ function BlogPage() {
               </button>
             ))}
           </div>
-          <label className="relative block w-full lg:w-80">
+          <label className="relative block w-full shrink-0 lg:w-72">
             <span className="sr-only">Search articles</span>
             <Search className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-slate/50" aria-hidden="true" />
             <input
