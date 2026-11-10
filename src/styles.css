@@ -58,6 +58,8 @@
   --color-ice: var(--ice);
   --color-ice-soft: var(--ice-soft);
   --color-slate: var(--slate);
+  --color-night: var(--night);
+  --color-navy: var(--navy);
   --color-star: var(--star);
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
@@ -84,68 +86,117 @@
 :root {
   --radius: 1rem;
 
-  /* Brand */
-  --sky: oklch(0.7535 0.139 232.66); /* #38BDF8 */
+  /* Fixed brand constants (never change with context) */
+  --c-white: oklch(1 0 0); /* #FFFFFF */
+  --c-sky: oklch(0.7535 0.139 232.66); /* #38BDF8 */
+  --c-deep: oklch(0.37 0.1326 259.53); /* #0B3B84 */
+  --c-ice: oklch(0.9514 0.025 236.82); /* #E0F2FE */
+  --c-slate: oklch(0.2795 0.0368 260.03); /* #1E293B */
+  /* Darker navy for the footer, CTA panels and lightbox on the deep page */
+  --c-night: oklch(0.27 0.095 262);
+
+  --sky: var(--c-sky);
   --sky-strong: oklch(0.6847 0.1479 237.32);
-  /* Darker sky tone for accent words on white (meets contrast for large text) */
-  --sky-ink: oklch(0.55 0.15 242);
-  --deep: oklch(0.37 0.1326 259.53); /* #0B3B84 */
-  --deep-foreground: oklch(1 0 0);
-  --ice: oklch(0.9514 0.025 236.82); /* #E0F2FE */
-  /* Slightly deeper ice tone for alternating sections on the ice page background */
-  --ice-soft: oklch(0.925 0.036 236.5);
-  --slate: oklch(0.2795 0.0368 260.03); /* #1E293B */
+  --night: var(--c-night);
+  --navy: var(--c-deep);
   --star: oklch(0.8439 0.1513 87.87);
   --whatsapp: oklch(0.761 0.2015 149.74);
-  --whatsapp-foreground: oklch(0.2795 0.0368 260.03);
+  --whatsapp-foreground: var(--c-slate);
 
-  /* shadcn semantic mapping */
-  /* Page background: brand Ice Blue #E0F2FE (owner asked for no white page background) */
-  --background: var(--ice);
-  --foreground: var(--slate);
-  --card: oklch(1 0 0);
-  --card-foreground: var(--slate);
-  --popover: oklch(1 0 0);
-  --popover-foreground: var(--slate);
-  --primary: var(--deep);
-  --primary-foreground: oklch(1 0 0);
+  /*
+   * PAGE CONTEXT: deep blue background (owner's choice), white text.
+   * "deep" is the strong ink colour, so on the page it is white and solid
+   * "bg-deep" elements become white buttons/pills with deep-blue text.
+   */
+  --deep: var(--c-white);
+  --deep-foreground: var(--c-deep);
+  --slate: oklch(0.95 0.015 240);
+  --sky-ink: var(--c-sky);
+  --ice: color-mix(in oklab, var(--c-white) 13%, var(--c-deep));
+  --ice-soft: oklch(0.33 0.118 261);
+
+  --background: var(--c-deep);
+  --foreground: var(--c-white);
+  --card: var(--c-white);
+  --card-foreground: var(--c-slate);
+  --popover: var(--c-white);
+  --popover-foreground: var(--c-slate);
+  --primary: var(--c-white);
+  --primary-foreground: var(--c-deep);
   --secondary: var(--ice);
-  --secondary-foreground: var(--deep);
+  --secondary-foreground: var(--c-white);
   --muted: var(--ice-soft);
-  --muted-foreground: oklch(0.45 0.03 257);
+  --muted-foreground: oklch(0.86 0.03 245);
   --accent: var(--ice);
-  --accent-foreground: var(--deep);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.88 0.03 238);
-  --input: oklch(0.9 0.02 240);
-  --ring: var(--sky);
+  --accent-foreground: var(--c-white);
+  --destructive: oklch(0.7 0.19 25);
+  --destructive-foreground: var(--c-white);
+  --border: color-mix(in oklab, var(--c-white) 18%, transparent);
+  --input: color-mix(in oklab, var(--c-white) 26%, transparent);
+  --ring: var(--c-sky);
 
-  --chart-1: var(--sky);
-  --chart-2: var(--deep);
-  --chart-3: var(--ice);
-  --chart-4: var(--slate);
+  --chart-1: var(--c-sky);
+  --chart-2: var(--c-white);
+  --chart-3: var(--c-ice);
+  --chart-4: var(--c-slate);
   --chart-5: var(--sky-strong);
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: var(--slate);
-  --sidebar-primary: var(--deep);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar: var(--c-deep);
+  --sidebar-foreground: var(--c-white);
+  --sidebar-primary: var(--c-white);
+  --sidebar-primary-foreground: var(--c-deep);
   --sidebar-accent: var(--ice);
-  --sidebar-accent-foreground: var(--deep);
+  --sidebar-accent-foreground: var(--c-white);
   --sidebar-border: var(--border);
-  --sidebar-ring: var(--sky);
+  --sidebar-ring: var(--c-sky);
 
-  --shadow-soft-value: 0 1px 2px color-mix(in oklab, var(--deep) 6%, transparent),
-    0 8px 24px -12px color-mix(in oklab, var(--deep) 18%, transparent);
-  --shadow-lift-value: 0 2px 4px color-mix(in oklab, var(--deep) 6%, transparent),
-    0 24px 48px -20px color-mix(in oklab, var(--deep) 30%, transparent);
-  --shadow-frame-value: 0 30px 60px -30px color-mix(in oklab, var(--deep) 45%, transparent),
-    0 0 0 1px color-mix(in oklab, var(--deep) 8%, transparent);
+  --shadow-soft-value: 0 1px 2px oklch(0.15 0.05 262 / 20%),
+    0 10px 28px -12px oklch(0.15 0.05 262 / 45%);
+  --shadow-lift-value: 0 2px 4px oklch(0.15 0.05 262 / 22%),
+    0 28px 56px -20px oklch(0.12 0.05 262 / 60%);
+  --shadow-frame-value: 0 30px 60px -28px oklch(0.12 0.05 262 / 70%),
+    0 0 0 1px oklch(1 0 0 / 10%);
+}
+
+/*
+ * LIGHT SURFACE CONTEXT: white cards (bg-card) and anything marked .surface-light
+ * restore the original light palette so their contents keep dark text.
+ */
+.surface-light,
+.bg-card,
+[class*=" bg-card/"],
+[class^="bg-card/"] {
+  --deep: var(--c-deep);
+  --deep-foreground: var(--c-white);
+  --slate: var(--c-slate);
+  /* Darker sky tone for accent words on white (meets contrast for large text) */
+  --sky-ink: oklch(0.55 0.15 242);
+  --ice: var(--c-ice);
+  --ice-soft: oklch(0.9771 0.0125 236.62);
+  --background: var(--c-white);
+  --foreground: var(--c-slate);
+  --primary: var(--c-deep);
+  --primary-foreground: var(--c-white);
+  --secondary: var(--c-ice);
+  --secondary-foreground: var(--c-deep);
+  --muted: oklch(0.9771 0.0125 236.62);
+  --muted-foreground: oklch(0.45 0.03 257);
+  --accent: var(--c-ice);
+  --accent-foreground: var(--c-deep);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.018 240);
+  --input: oklch(0.9 0.02 240);
+  color: var(--c-slate);
+}
+
+/* NIGHT PANELS: darker navy blocks (footer, call-to-action, lightbox) with white text */
+.surface-night {
+  background-color: var(--c-night);
+  color: var(--c-white);
 }
 
 @layer base {
   * {
-    border-color: var(--color-border);
+    border-color: var(--border);
   }
 
   html {
@@ -153,8 +204,8 @@
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -165,19 +216,19 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    color: var(--color-deep);
+    color: var(--deep);
     letter-spacing: -0.02em;
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-sky-strong);
+    outline: 2px solid var(--sky-strong);
     outline-offset: 3px;
     border-radius: 6px;
   }
 
   ::selection {
-    background: var(--color-ice);
-    color: var(--color-deep);
+    background: var(--c-sky);
+    color: var(--c-slate);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -211,7 +262,7 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-deep);
+  color: var(--deep);
 }
 
 @utility text-balance {
@@ -224,13 +275,13 @@
   height: 2px;
   width: 2.5rem;
   border-radius: 999px;
-  background: var(--color-sky);
+  background: var(--sky);
 }
 
 /* Soft dotted grid used behind hero / workflow */
 @utility bg-grid-soft {
   background-image: radial-gradient(
-    color-mix(in oklab, var(--color-deep) 14%, transparent) 1px,
+    color-mix(in oklab, var(--deep) 14%, transparent) 1px,
     transparent 1px
   );
   background-size: 22px 22px;
@@ -251,7 +302,7 @@
 
 /* Article typography */
 @utility prose-article {
-  color: var(--color-slate);
+  color: var(--slate);
   font-size: 1.0625rem;
   line-height: 1.8;
   & h2 {
@@ -280,21 +331,21 @@
     margin-top: 0.4rem;
   }
   & li::marker {
-    color: var(--color-sky-strong);
+    color: var(--sky-strong);
   }
   & a {
-    color: var(--color-deep);
+    color: var(--deep);
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: var(--color-sky);
+    text-decoration-color: var(--sky);
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
   }
   & a:hover {
-    text-decoration-color: var(--color-deep);
+    text-decoration-color: var(--deep);
   }
   & strong {
-    color: var(--color-deep);
+    color: var(--deep);
     font-weight: 600;
   }
 }

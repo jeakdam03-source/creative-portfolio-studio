@@ -32,10 +32,10 @@ export const crmAutomationStopLosingLeads: Article = {
       type: "ul",
       items: [
         "**Contact records** with names, details, notes and history in one place.",
-        "**Pipelines** that show where each opportunity sits — new, contacted, booked, won or lost.",
+        "**Pipelines** that show where each opportunity sits: new, contacted, booked, won or lost.",
         "**Tags and custom fields** to group contacts by service, source or interest.",
         "**Tasks and reminders** so the team knows who needs attention today.",
-        "**Communication history** — emails, messages and calls linked to the right person.",
+        "**Communication history**: emails, messages and calls linked to the right person.",
       ],
     },
     {
@@ -59,7 +59,7 @@ export const crmAutomationStopLosingLeads: Article = {
     },
     {
       type: "p",
-      text: "None of these are about the quality of your service. They're process problems — and process problems can be fixed.",
+      text: "None of these are about the quality of your service. They're process problems, and process problems can be fixed.",
     },
     { type: "h2", id: "contact-organization", text: "Contact organisation: the foundation" },
     {
@@ -68,7 +68,7 @@ export const crmAutomationStopLosingLeads: Article = {
     },
     {
       type: "p",
-      text: "For example, you might tag every contact with the service they asked about and the place they came from — your website, a funnel, a referral. You might add a custom field for their preferred contact method. Small decisions like these make it possible to send the right message to the right person later.",
+      text: "For example, you might tag every contact with the service they asked about and the place they came from, such as your website, a funnel or a referral. You might add a custom field for their preferred contact method. Small decisions like these make it possible to send the right message to the right person later.",
     },
     { type: "h2", id: "automated-follow-ups", text: "Automated follow-ups that still feel personal" },
     {
@@ -109,12 +109,12 @@ export const crmAutomationStopLosingLeads: Article = {
     },
     {
       type: "p",
-      text: "Reminders can also include directions, what to bring, or a link to reschedule — which is far better than an empty slot.",
+      text: "Reminders can also include directions, what to bring, or a link to reschedule, which is far better than an empty slot.",
     },
     { type: "h2", id: "connected-processes", text: "The benefits of connected business processes" },
     {
       type: "p",
-      text: "The biggest gains come when your website, forms, calendar, messages and CRM work together. A lead fills in a form on your site, appears in the CRM with the right tags, receives a confirmation, books a call through your calendar and gets reminders automatically — all without anyone copying details from one place to another.",
+      text: "The biggest gains come when your website, forms, calendar, messages and CRM work together. A lead fills in a form on your site, appears in the CRM with the right tags, receives a confirmation, books a call through your calendar and gets reminders automatically, all without anyone copying details from one place to another.",
     },
     {
       type: "ul",
@@ -151,7 +151,7 @@ export const crmAutomationStopLosingLeads: Article = {
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {
       type: "p",
-      text: "Leads are usually lost through small gaps — a slow reply, a forgotten follow-up, a missed reminder. An organised CRM gives you visibility, and thoughtful automation makes sure the right steps happen every time.",
+      text: "Leads are usually lost through small gaps: a slow reply, a forgotten follow-up, a missed reminder. An organised CRM gives you visibility, and thoughtful automation makes sure the right steps happen every time.",
     },
     {
       type: "p",

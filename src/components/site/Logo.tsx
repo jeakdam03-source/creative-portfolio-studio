@@ -25,21 +25,21 @@ export function Logo({ className, tone = "default" }: { className?: string; tone
     <Link
       to="/"
       className={cn("group inline-flex items-center gap-2.5", className)}
-      aria-label={`${site.name} — home`}
+      aria-label={`${site.name} home page`}
     >
       <span
         className={cn(
           "grid place-items-center rounded-xl transition-transform duration-300 group-hover:-rotate-3",
-          tone === "onDeep" && "bg-card p-1.5",
+          "bg-card p-1",
         )}
       >
-        <LogoMark className={tone === "onDeep" ? "h-8" : undefined} />
+        <LogoMark className="h-8" />
       </span>
       <span className="flex flex-col leading-none">
         <span
           className={cn(
             "font-display text-[1.02rem] font-semibold tracking-tight",
-            tone === "onDeep" ? "text-deep-foreground" : "text-deep",
+            tone === "onDeep" ? "text-foreground" : "text-deep",
           )}
         >
           {site.name}

@@ -13,7 +13,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/blog/")({
   head: () =>
     seo({
-      title: "Insights & Ideas — Website Design, CRM, Funnels & Automation Blog",
+      title: "Insights & Ideas | Website Design, CRM, Funnels & Automation Blog",
       description:
         "Practical insights on website design, CRM systems, sales funnels, and automation to help businesses make smarter digital decisions.",
       path: "/blog",
@@ -156,7 +156,7 @@ function BlogPage() {
                 }}
                 className={cn(
                   "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
-                  category === c ? "border-deep bg-deep text-deep-foreground" : "border-border bg-card text-deep hover:border-sky",
+                  category === c ? "border-deep bg-deep text-deep-foreground" : "border-border bg-ice text-deep hover:border-sky",
                 )}
               >
                 {c === "All" ? "All articles" : c}
@@ -174,7 +174,7 @@ function BlogPage() {
                 setPage(1);
               }}
               placeholder="Search articles…"
-              className="h-12 w-full rounded-full border border-border bg-card pl-11 pr-4 text-sm outline-none transition-colors placeholder:text-slate/45 focus:border-sky"
+              className="h-12 w-full rounded-full border border-border bg-ice pl-11 pr-4 text-sm text-deep outline-none transition-colors placeholder:text-slate/45 focus:border-sky"
             />
           </label>
         </div>

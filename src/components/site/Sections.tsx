@@ -42,7 +42,7 @@ export function ProblemsSection() {
             intro={
               <>
                 <p>
-                  An attractive online presence is important — but it's only half the picture. Behind every good website
+                  An attractive online presence is important, but it's only half the picture. Behind every good website
                   there should be systems that capture leads, follow up on time and keep customer information organised.
                 </p>
                 <p className="mt-4">
@@ -104,7 +104,7 @@ export function ProcessSection() {
           align="center"
           eyebrow="Working process"
           title="How I Bring Your Ideas to Life"
-          intro="A clear, collaborative process — so you always know what's happening and what comes next."
+          intro="A clear, collaborative process, so you always know what's happening and what comes next."
         />
         <div className="relative mt-16">
           <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-sky to-transparent lg:block" aria-hidden="true" />
@@ -131,7 +131,6 @@ export function ProcessSection() {
 
 export function TestimonialsSection() {
   if (!site.showTestimonials || testimonials.length === 0) return null;
-  const hasSamples = testimonials.some((t) => t.sample);
   return (
     <section className="container-page py-24 lg:py-32" aria-labelledby="testimonials-heading">
       <div className="text-center">
@@ -141,11 +140,6 @@ export function TestimonialsSection() {
           title={<span id="testimonials-heading">Kind Words From Clients</span>}
           intro="Thoughtful work, clear communication, and digital solutions built with care."
         />
-        {hasSamples && (
-          <Reveal className="mx-auto mt-6 inline-flex max-w-xl items-center gap-2 rounded-full border border-star/60 bg-star/10 px-4 py-2 text-xs font-medium text-slate">
-            Design preview: these are sample reviews, not feedback from real clients.
-          </Reveal>
-        )}
       </div>
       <Stagger className="mt-14 grid gap-6 md:grid-cols-3">
         {testimonials.map((t, i) => (
@@ -164,8 +158,12 @@ export function TestimonialsSection() {
             <figcaption className="mt-6 border-t border-border pt-4 text-sm">
               {t.author && <span className="block font-semibold text-deep">{t.author}</span>}
               {t.role && <span className="block text-slate/60">{t.role}</span>}
-              <span className="font-medium text-deep">{t.service}</span>
-              {t.sample && <span className="text-slate/60"> — Sample Review</span>}
+              <span className="flex flex-wrap items-center gap-2">
+                <span className="font-medium text-deep">{t.service}</span>
+                {t.sample && (
+                  <span className="rounded-full bg-ice px-2.5 py-0.5 text-xs font-medium text-slate/70">Sample Review</span>
+                )}
+              </span>
             </figcaption>
           </motion.figure>
         ))}
@@ -178,21 +176,21 @@ export function TestimonialsSection() {
 
 export function CtaBand({
   title = "Ready to build something that works for your business?",
-  text = "Tell me about your website, funnel, CRM or automation project — I'll reply personally.",
+  text = "Tell me about your website, funnel, CRM or automation project. I'll reply personally.",
 }: {
   title?: string;
   text?: string;
 }) {
   return (
     <section className="container-page pb-24 lg:pb-32">
-      <Reveal className="relative overflow-hidden rounded-[2.25rem] bg-deep px-6 py-14 text-center sm:px-12 lg:py-20">
+      <Reveal className="relative overflow-hidden surface-night rounded-[2.25rem] px-6 py-14 text-center sm:px-12 lg:py-20">
         <svg aria-hidden="true" viewBox="0 0 800 300" className="pointer-events-none absolute inset-0 h-full w-full opacity-30" preserveAspectRatio="none">
           <path d="M0 220 C 200 140 380 300 800 160" stroke="var(--color-sky)" strokeWidth="2" fill="none" />
           <path d="M0 260 C 260 180 420 320 800 210" stroke="var(--color-sky)" strokeWidth="1" fill="none" />
         </svg>
         <div className="relative mx-auto max-w-2xl">
-          <h2 className="text-balance font-display text-3xl font-semibold text-deep-foreground sm:text-4xl">{title}</h2>
-          <p className="mt-4 text-deep-foreground/80">{text}</p>
+          <h2 className="text-balance font-display text-3xl font-semibold text-foreground sm:text-4xl">{title}</h2>
+          <p className="mt-4 text-foreground/80">{text}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <WhatsAppButton variant="sky" />
             <Button asChild variant="onDeep" size="xl">

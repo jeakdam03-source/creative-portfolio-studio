@@ -92,7 +92,7 @@ export const projects: Project[] = [
     ],
     scope: ["Website design", "Responsive page layouts", "Service presentation"],
     solution: [
-      "Dedicated navigation for each service line — credit counseling, business credit, funding, credit cards, credit boost, rent reporting and mortgage/real estate.",
+      "Dedicated navigation for each service line: credit counseling, business credit, funding, credit cards, credit boost, rent reporting and mortgage/real estate.",
       "Service cards with icons and clear Learn More calls to action.",
       "Supporting trust sections: value statements, testimonials and a partner strip.",
       "Layouts that adapt from desktop to mobile, with a persistent contact button.",
@@ -177,7 +177,7 @@ export const projects: Project[] = [
       "Business Credit Program webinar registration page with speaker photos",
     ),
     overview: [
-      "This funnel promotes a business credit webinar. It focuses on one action — reserving a seat — and repeats that call to action throughout the page.",
+      "This funnel promotes a business credit webinar. It focuses on one action, reserving a seat, and repeats that call to action throughout the page.",
       "The page introduces the speakers, lists what attendees will learn and finishes with a blog preview and contact details.",
     ],
     scope: ["Funnel page design", "Registration-focused layout"],
@@ -227,7 +227,7 @@ export const projects: Project[] = [
     ),
     overview: [
       "This page presents a credit and funding partner program as a one-stop shop for business and personal financial needs.",
-      "Each core service — personal credit counseling, business credit consulting and funding services — has its own illustrated block and Get Started call to action, followed by partners and testimonials.",
+      "Each core service (personal credit counseling, business credit consulting and funding services) has its own illustrated block and Get Started call to action, followed by partners and testimonials.",
     ],
     scope: ["Funnel page design", "Lead capture layout"],
     solution: [
@@ -312,7 +312,7 @@ export const projects: Project[] = [
       poster: w("lead-capture-poster"),
       title: "Walkthrough: lead capture + welcome sequence",
       description:
-        "A silent screen recording scrolling through the full workflow — tagging, opportunity creation, notifications, branches and the multi-day sequence.",
+        "A silent screen recording scrolling through the full workflow: tagging, opportunity creation, notifications, branches and the multi-day sequence.",
     },
     outcomes: [],
     note: PRIVACY_NOTE,
@@ -346,7 +346,7 @@ export const projects: Project[] = [
       {
         src: w("crm-appointment-reminder-flow"),
         alt: "Appointment booking reminder workflow with email and SMS branches",
-        caption: "Appointment reminder flow — email and SMS",
+        caption: "Appointment reminder flow: email and SMS",
         kind: "app",
         width: 480,
         height: 657,
@@ -369,7 +369,7 @@ export const projects: Project[] = [
       height: 584,
     },
     overview: [
-      "The voice agent answers inbound calls as a receptionist. It follows a structured prompt with clear rules, and can take actions during the call — transferring to a team member, booking an appointment, and saving the caller's details.",
+      "The voice agent answers inbound calls as a receptionist. It follows a structured prompt with clear rules, and can take actions during the call, such as transferring to a team member, booking an appointment, and saving the caller's details.",
       "Related workflows activate an AI assistant when a customer replies, and notify the team when a conversation is tagged for human hand-over.",
     ],
     scope: ["Voice agent configuration", "Conversation rules and prompt design", "Supporting workflows"],
@@ -429,7 +429,7 @@ export const projects: Project[] = [
     solution: [
       "Calendar ↔ database sync: watches database items every 15 minutes and routes each change to create, update or delete the matching calendar event, then writes back to the database.",
       "AI chat responder: watches a team chat channel, generates a reply with an AI model and posts it back.",
-      "AI messaging assistant: receives messages (including voice notes, which are transcribed), uses an AI agent with memory and tools — a menu document, calendar lookup and booking, and a spreadsheet log — then replies to the customer.",
+      "AI messaging assistant: receives messages (including voice notes, which are transcribed), uses an AI agent with memory and tools (a menu document, calendar lookup and booking, and a spreadsheet log), then replies to the customer.",
     ],
     capabilities: ["System integrations", "Data sync", "AI agents with tools", "Workflow routing"],
     gallery: [

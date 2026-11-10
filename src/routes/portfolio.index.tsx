@@ -12,7 +12,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/portfolio/")({
   head: () =>
     seo({
-      title: "Portfolio — Websites, Sales Funnels, CRM & Automation Projects",
+      title: "Portfolio | Websites, Sales Funnels, CRM & Automation Projects",
       description:
         "Selected website design, sales funnel, CRM automation, AI automation and integration projects by Ajayi Oluwayemisi.",
       path: "/portfolio",
@@ -52,14 +52,14 @@ function PortfolioPage() {
                   onClick={() => setFilter(f)}
                   className={cn(
                     "relative shrink-0 rounded-full border px-4 py-2.5 text-sm font-medium transition-colors",
-                    active ? "border-deep text-deep-foreground" : "border-border bg-card text-deep hover:border-sky",
+                    active ? "border-deep text-deep-foreground" : "border-border bg-ice text-deep hover:border-sky",
                   )}
                 >
                   {active && (
                     <motion.span layoutId="filter-pill" className="absolute inset-0 -z-10 rounded-full bg-deep" transition={{ type: "spring", stiffness: 380, damping: 32 }} />
                   )}
                   <span className="relative">
-                    {f} <span className={cn("ml-1 text-xs", active ? "text-sky" : "text-slate/50")}>{count}</span>
+                    {f} <span className={cn("ml-1 text-xs", active ? "text-deep-foreground/60" : "text-slate/60")}>{count}</span>
                   </span>
                 </button>
               );

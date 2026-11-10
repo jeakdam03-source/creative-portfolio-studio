@@ -13,7 +13,7 @@ import { seo } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     seo({
-      title: "Contact — Start Your Website, Funnel or Automation Project",
+      title: "Contact | Start Your Website, Funnel or Automation Project",
       description:
         "Have a website, CRM, funnel, or automation project in mind? Message Ajayi Oluwayemisi on WhatsApp, send an email, or submit a project inquiry.",
       path: "/contact",
@@ -80,14 +80,14 @@ function ContactPage() {
                 {...(m.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className={
                   "group relative flex flex-col rounded-3xl border p-7 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift " +
-                  (m.primary ? "border-deep bg-deep text-deep-foreground" : "border-border bg-card")
+                  (m.primary ? "surface-night border-sky/40 text-foreground" : "border-border bg-card")
                 }
               >
                 <span className={"grid size-12 place-items-center rounded-2xl " + (m.primary ? "bg-whatsapp text-whatsapp-foreground" : "bg-ice text-deep")}>
                   <Icon className="size-6" />
                 </span>
-                <h2 className={"mt-6 font-display text-xl font-semibold " + (m.primary ? "text-deep-foreground" : "")}>{m.title}</h2>
-                <p className={"mt-2 text-sm " + (m.primary ? "text-deep-foreground/80" : "text-slate/70")}>{m.text}</p>
+                <h2 className={"mt-6 font-display text-xl font-semibold " + (m.primary ? "text-foreground" : "")}>{m.title}</h2>
+                <p className={"mt-2 text-sm " + (m.primary ? "text-foreground/80" : "text-slate/70")}>{m.text}</p>
                 <span className={"mt-5 inline-flex items-center gap-1.5 font-semibold " + (m.primary ? "text-sky" : "text-deep")}>
                   {m.value}
                   <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

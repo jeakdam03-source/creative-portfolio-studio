@@ -15,16 +15,16 @@ export const serviceOptions = [
 export const budgetOptions = [
   "Not sure yet",
   "Under $500",
-  "$500 – $1,500",
-  "$1,500 – $3,000",
-  "$3,000 – $5,000",
+  "$500 to $1,500",
+  "$1,500 to $3,000",
+  "$3,000 to $5,000",
   "$5,000+",
 ] as const;
 
 export const timelineOptions = [
   "As soon as possible",
   "Within 1 month",
-  "1 – 3 months",
+  "1 to 3 months",
   "3+ months",
   "Flexible",
 ] as const;

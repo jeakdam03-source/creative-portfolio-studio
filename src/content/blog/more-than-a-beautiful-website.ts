@@ -18,7 +18,7 @@ export const moreThanABeautifulWebsite: Article = {
   body: [
     {
       type: "p",
-      text: "Most business owners know they need a website. Fewer are sure what that website is actually supposed to do. It's easy to treat a site like a digital business card — something that looks nice, lists your services and sits quietly in the background. But a website can do much more than that, and when it's planned well, it becomes one of the hardest-working parts of your business.",
+      text: "Most business owners know they need a website. Fewer are sure what that website is actually supposed to do. It's easy to treat a site like a digital business card, something that looks nice, lists your services and sits quietly in the background. But a website can do much more than that, and when it's planned well, it becomes one of the hardest-working parts of your business.",
     },
     {
       type: "p",
@@ -31,7 +31,7 @@ export const moreThanABeautifulWebsite: Article = {
     },
     {
       type: "p",
-      text: "Professional design is about removing that doubt. Consistent colours and typography, clear spacing and good-quality images tell visitors that you pay attention to detail — which is exactly what they hope you'll do for them.",
+      text: "Professional design is about removing that doubt. Consistent colours and typography, clear spacing and good-quality images tell visitors that you pay attention to detail, which is exactly what they hope you'll do for them.",
     },
     { type: "h2", id: "appearance-is-not-enough", text: "Why appearance alone is not enough" },
     {
@@ -46,7 +46,7 @@ export const moreThanABeautifulWebsite: Article = {
       type: "ul",
       items: [
         "**Who is this website for?** A busy homeowner looking for a plumber wants different information from a company comparing marketing agencies.",
-        "**What should a visitor do next?** Call, book, request a quote, register or send a message — pick the main action.",
+        "**What should a visitor do next?** Call, book, request a quote, register or send a message. Pick the main action.",
         "**What do they need to know first?** What you offer, where you work, why they can trust you and how to get started.",
       ],
     },
@@ -57,7 +57,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "user-experience", text: "User experience: making it easy" },
     {
       type: "p",
-      text: "User experience simply means how easy and pleasant it is to use your website. Good user experience is usually invisible — visitors find what they need without thinking about it. Poor user experience is noticed immediately.",
+      text: "User experience simply means how easy and pleasant it is to use your website. Good user experience is usually invisible: visitors find what they need without thinking about it. Poor user experience is noticed immediately.",
     },
     {
       type: "ul",
@@ -76,7 +76,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "mobile-responsiveness", text: "Mobile responsiveness is not optional" },
     {
       type: "p",
-      text: "Many of your visitors will arrive on a phone — often while doing something else. A responsive website rearranges itself to fit any screen, so text stays readable, buttons are easy to tap and nothing spills off the edge.",
+      text: "Many of your visitors will arrive on a phone, often while doing something else. A responsive website rearranges itself to fit any screen, so text stays readable, buttons are easy to tap and nothing spills off the edge.",
     },
     {
       type: "p",
@@ -85,7 +85,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "lead-capture", text: "Lead capture: don't let interested visitors slip away" },
     {
       type: "p",
-      text: "Not everyone is ready to buy on their first visit. Some want to compare options or come back later. Lead capture gives those visitors a low-effort way to stay connected — and gives you a way to follow up.",
+      text: "Not everyone is ready to buy on their first visit. Some want to compare options or come back later. Lead capture gives those visitors a low-effort way to stay connected, and gives you a way to follow up.",
     },
     {
       type: "ul",
@@ -93,7 +93,7 @@ export const moreThanABeautifulWebsite: Article = {
         "A simple inquiry or quote request form.",
         "A booking link for consultations or appointments.",
         "A click-to-chat button for quick questions.",
-        "A helpful resource — a checklist or guide — in exchange for an email address.",
+        "A helpful resource, such as a checklist or guide, in exchange for an email address.",
       ],
     },
     {
@@ -103,7 +103,7 @@ export const moreThanABeautifulWebsite: Article = {
     { type: "h2", id: "calls-to-action", text: "Calls to action that feel natural" },
     {
       type: "p",
-      text: "A call to action is the button or link that invites a visitor to take the next step. The best ones are specific and appear at natural decision points — after you've explained a service, shown an example of your work, or answered a common question.",
+      text: "A call to action is the button or link that invites a visitor to take the next step. The best ones are specific and appear at natural decision points: after you've explained a service, shown an example of your work, or answered a common question.",
     },
     {
       type: "p",
@@ -126,7 +126,7 @@ export const moreThanABeautifulWebsite: Article = {
     },
     {
       type: "callout",
-      text: "**A hypothetical example:** a small cleaning company adds a short quote form that asks for property size and preferred dates. Instead of a vague \"contact us\" message, the owner receives the details needed to reply with a price — saving a round of emails for every inquiry.",
+      text: "**A hypothetical example:** a small cleaning company adds a short quote form that asks for property size and preferred dates. Instead of a vague \"contact us\" message, the owner receives the details needed to reply with a price, saving a round of emails for every inquiry.",
     },
     { type: "h2", id: "conclusion", text: "The takeaway" },
     {

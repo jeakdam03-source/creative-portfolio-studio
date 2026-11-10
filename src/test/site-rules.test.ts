@@ -97,3 +97,10 @@ describe("Content integrity", () => {
     expect(articles).toHaveLength(3);
   });
 });
+
+describe("Public copy punctuation", () => {
+  it("uses no em or en dashes in site content (owner asked for them removed)", () => {
+    const copy = JSON.stringify([articles, projects, services, expertise, testimonials]);
+    expect(copy).not.toMatch(/[—–]/);
+  });
+});
