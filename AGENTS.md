@@ -36,3 +36,4 @@ use the editor.
 - Contact form emails go through a `createServerFn` calling the Resend REST API with `RESEND_API_KEY`/`CONTACT_FROM_EMAIL` env vars; it must never report success unless the provider accepted the message.
 - Booking buttons render only via `getBookingUrl()` returning a valid https URL — no dead buttons.
 - `src/test/site-rules.test.ts` guards contact, booking, form, and content-integrity rules; run it after content edits.
+- Colours are context-themed in `src/styles.css`: the page context maps `--deep`/`--slate` to light ink on the deep background, and `.bg-card`/`.surface-light` restore the light palette; use `surface-night` for dark panels and `text-navy`/`bg-night` for fixed colours, so components keep the same class names across surfaces.
