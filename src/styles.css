@@ -192,7 +192,6 @@
 .surface-night {
   background-color: var(--c-night);
   color: var(--c-white);
-  --deep-foreground: var(--c-white);
 }
 
 @layer base {
